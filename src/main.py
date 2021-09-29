@@ -23,6 +23,6 @@ async def pong(ctx):
 
 @bot.command()
 async def name(ctx):
-    await ctx.send('pong')
+    await ctx.send(ctx.message.author)
 
 bot.run(TOKEN)  # Starts the bot
